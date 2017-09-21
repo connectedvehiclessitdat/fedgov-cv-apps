@@ -1,0 +1,44 @@
+{
+    "source": {
+        "file": "IntersectionRecordHex.txt",
+        "type": "HEX",
+        "delay": 1000
+    },
+    "destination": {
+      "host":"10.152.191.50",
+      "sendPort":46751,
+	  "recvPort":46752,
+	  "fromPort":46753
+    },
+    "other": {
+        "verbose": false
+    },
+    "dialog": {
+        "type": "intersectionSitDataDep",
+        "custom": {
+            "record": true,
+            "ttl": 1,
+            "region": {
+                "nw": {
+                    "lat": 43.1,
+                    "lon": -85.0
+                },
+                "se": {
+                    "lat": 41.1,
+                    "lon": -82.1
+                }
+            }
+        }
+    },
+    "request": {
+        "timeout": 2000,
+        "attempts": 1,
+        "ignore": true
+    },
+    "resend": {
+        "timeout": 4000,
+        "attempts": 3,
+        "delay": 200,
+        "recvPort": 46752
+    }
+}

@@ -1,0 +1,7 @@
+{
+   "source":{
+      "pipe":true,
+      "type":"BASE64",
+      "delay":2000
+   }
+}

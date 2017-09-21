@@ -1,0 +1,28 @@
+{
+   "source":{
+      "file":"IntersectionSitData.uper",
+      "type":"UPER",
+      "delay":1000
+   },
+   "destination":{
+      "host":"10.152.191.50",
+      "sendPort":46751
+   },
+   "other":{
+      "verbose":true
+   },
+   "dialog":{
+      "type": "intersectionSitDataDep"
+   },
+   "request":{
+      "timeout":4000,
+      "attempts":3,
+      "ignore":false
+   },
+   "resend":{
+      "timeout":4000,
+      "attempts":3,
+      "delay":200,
+      "recvPort":46752
+   }
+}

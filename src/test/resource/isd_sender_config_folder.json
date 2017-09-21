@@ -1,0 +1,21 @@
+{
+   "source":{
+      "folder":{
+         "path":"c:/temp",
+         "filter":"*.uper"
+      },
+      "type":"UPER",
+      "delay":1000
+   },
+   "dialog":{
+      "type": "vehSitData",
+      "timeout":20000,
+      "records":2000
+   },
+   "resend":{
+      "timeout":1000,
+      "attempts":2,
+      "delay":200,
+      "recvPort":47660
+   }
+}

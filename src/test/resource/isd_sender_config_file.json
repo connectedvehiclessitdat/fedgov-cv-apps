@@ -1,0 +1,19 @@
+{
+   "source":{
+      "file":"c:/temp/my_ber.txt",
+      "type":"HEX",
+      "delay":1000
+   },
+   "destination":{
+      "host":"localhost",
+      "sendPort":47659
+   },
+   "resend":{
+      "timeout":4000,
+      "attempts":5,
+      "delay":2500
+   },
+   "other":{
+      "verbose":false
+   }
+}

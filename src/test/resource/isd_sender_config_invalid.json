@@ -1,0 +1,31 @@
+{
+   "source":{
+      "type": "invalid",
+      "port":27017
+   },
+   "destination":{
+      "host":"10.98.65.120",
+      "sendPort":47655,
+      "recvPort":47656
+   },
+   "dialog":{
+      "type": "IntersectionSitDataDep",
+      "timeout":30000,
+      "records":8000
+   },
+   "request":{
+      "timeout":2500,
+      "attempts":4
+   },
+   "resend":{
+      "timeout":4000,
+      "attempts":5,
+      "delay":1500,
+      "recvPort":47660,
+      "fromPort":47661
+   },
+   "other":{
+      "verbose":true,
+      "relaxed":true
+   }
+}

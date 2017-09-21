@@ -1,0 +1,43 @@
+{
+    "source": {
+        "file": "IntersectionSitDataBase64.txt",
+        "type": "BASE64",
+        "delay": 1000
+    },
+    "destination": {
+        "host": "10.152.191.50",
+        "sendPort": 46751
+    },
+    "other": {
+        "verbose": false
+    },
+    "dialog": {
+        "type": "intersectionSitDataDep",
+		"group": 12345,
+        "custom": {
+            "record": true,
+            "ttl": 3,
+            "region": {
+                "nw": {
+                    "lat": 1234.56,
+                    "lon": 4567.89
+                },
+                "se": {
+                    "lat": 1234.56,
+                    "lon": 4567.89
+                }
+            }
+        }
+    },
+    "request": {
+        "timeout": 4000,
+        "attempts": 3,
+        "ignore": false
+    },
+    "resend": {
+        "timeout": 4000,
+        "attempts": 3,
+        "delay": 200,
+        "recvPort": 46752
+    }
+}

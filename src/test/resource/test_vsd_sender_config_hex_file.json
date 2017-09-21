@@ -1,0 +1,23 @@
+{
+   "source":{
+      "file":"",
+      "type":"HEX",
+      "delay":1000
+   },
+   "destination":{
+      "host":"localhost",
+      "sendPort":47651,
+      "recvPort":47652
+   },
+   "other":{
+      "verbose":true
+   },
+   "dialog":{
+      "type": "vehSitData"
+   },
+   "request":{
+      "timeout":1000,
+      "attempts":2,
+      "ignore":true
+   }
+}
